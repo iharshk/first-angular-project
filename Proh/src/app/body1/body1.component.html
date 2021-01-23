@@ -1,0 +1,38 @@
+<div class="body1">
+   <button class="btn btn-success" (click)="btnClick()"  mat-button style="margin-left: 10px; font-weight: bold; font-size: 26px"><mat-icon aria-hidden="false" aria-label="Example home icon;" >home</mat-icon>Home</button>
+   <input class="search_label" type="text" name="search" [(ngModel)]="searchText" placeholder="&#8981;  Search (by ISP name, Price, Rating)"/><button  style="height: 30px; background-color: rgb(100, 120, 156)" (click)="searchBtn()" > Search </button>
+    
+   <div *ngIf="isValid">
+      <ul class="ISP"><br>
+         <li *ngFor="let product of products">
+           <a routerLink="/detail/{{product.id }}">
+             <span class="badge">{{product.rating }}</span> {{product.name}}
+           </a>
+         </li>
+      </ul>
+   </div>
+   <div *ngIf="(products | filter: searchText).length > 0">
+         <ul class="ISP"><br>
+            <li *ngFor="let product of products | filter: searchText; " (click)="onClick($event)">
+              <a routerLink="/detail/{{product.id }}">
+                <span class="badge" >{{product.rating }}</span> {{product.name}}
+              </a>
+            </li>
+         </ul>
+   </div>
+
+   
+   <div class="clear"></div>
+
+      
+</div>
+<div class="sort_pane">
+   <span class="sort_container">&#x02A6F; Sort by</span>
+   <span class="price_rating">
+      <input type="radio" name="sort_by" id="sort_price">Price
+      <input type="radio" name="sort_by" id="sort_rating">Rating
+   </span>
+</div>
+
+
+

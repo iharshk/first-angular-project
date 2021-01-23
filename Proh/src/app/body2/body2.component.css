@@ -1,0 +1,51 @@
+.body2 {
+    width : 35%;
+    height: 550px;
+    background: #868484;
+    padding: 5px;
+    float: right;
+
+}
+.clear {
+    clear: both;
+}
+
+.right_pane {
+    width : 230px;
+    height: 215px;
+    background-color: aliceblue;
+    margin-left: 215px;
+    margin-top : 10px;
+    border-radius: 10px;
+    border : 2px solid #000;
+}
+.heading_pane {
+    width : 230px;
+    height: 28px;
+    margin-left: -1.2px;
+    border-radius: 10px;
+    border : 2px solid #000;
+}
+.rating {
+    margin-top: 25px 
+}
+.description {
+    width: 465px;
+    height: 180px;
+    border : 2px solid #000;
+    border-radius: 10px;
+    margin-top: 15px
+}
+.bottom_pane {
+    margin-top: 25px;
+
+}
+.link {
+    font-size:25px;
+    font-weight: bold; 
+    background-color: #868484;
+    border: 2px solid darkgreen; 
+    color: darkgreen; 
+    padding: 5px 10px; 
+    margin-right: 20px
+}

@@ -1,0 +1,23 @@
+.header {
+    background-color: rgb(233, 215, 215);
+    align-items: center;
+    padding: 15px;
+    display : flex;
+
+}
+.search_isp {
+    margin-left: 20%;
+    font-size : 18px;
+    color : green;
+}
+.isp_api {
+    margin-left: 20%;
+    font-size : 20px;
+    color : black;
+}
+.isp_border {
+    border: 2px solid black;
+    padding: 0.5%;
+    border-radius: 10px;
+    background: #898f80;
+}
